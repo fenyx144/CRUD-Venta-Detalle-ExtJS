@@ -108,7 +108,7 @@ Iniciar PostgreSQL:
     ```
 5. **Ver el Proyecto en el Navegador**
 - Abrir el Navegador Web:
-- Ingresa la siguiente URL en la barra de direcciones: http://localhost/tarea1
+- Ingresa la siguiente URL en la barra de direcciones: http://localhost/tarea2
 ## Imágenes
 
 ### Captura de Pantalla
