@@ -55,10 +55,10 @@ Este proyecto requiere que tengas XAMPP y PostgreSQL instalados y configurados p
 1. **Configurar PHP para PostgreSQL**:
    - Abre el archivo `php.ini` en el directorio de instalación de XAMPP, por ejemplo, `C:\xampp\php\php.ini`.
    - Busca las siguientes líneas y descoméntalas (elimina el punto y coma `;` al inicio de la línea):
-     ```ini
+    ```ini
      extension=pgsql
      extension=pdo_pgsql
-     ```
+    ```
    - Guarda los cambios en `php.ini`.
 
 2. **Reiniciar Apache**:
@@ -70,7 +70,7 @@ Este proyecto requiere que tengas XAMPP y PostgreSQL instalados y configurados p
 
 1. **Clona o descarga el repositorio del proyecto desde GitHub:**
    ```bash
-   https://github.com/fenyx144/CRUD-Trabajadores-ExtJS
+   https://github.com/fenyx144/CRUD-Venta-Detalle-ExtJS
 2. **Cargar el Backup con pgAdmin**
 Abrir pgAdmin:
 
@@ -80,7 +80,7 @@ Abrir pgAdmin:
 En el panel de navegación izquierdo, selecciona el servidor al que deseas conectar e ingresa tus credenciales si es necesario.
 Cargar el Backup:
 
-- Haz clic en Tools -> Backup y en la ventana de Restore, selecciona el archivo de backup basedatos.sql .
+- Si no se realizo la importación del backup en el primer trabajo, haz clic en Tools -> Backup y en la ventana de Restore, selecciona el archivo de backup basedatos.sql .
 - Ajusta las opciones de restauración si es necesario y haz clic en Restore para comenzar el proceso.
 3. **Lanzar XAMPP y PostgreSQL**
  Iniciar XAMPP:
@@ -98,13 +98,14 @@ Iniciar PostgreSQL:
 
 - Copia la carpeta del proyecto y pégala en la carpeta htdocs dentro del directorio de instalación de XAMPP (por ejemplo, C:\xampp\htdocs\).
 
-- Abre el archivo conectar.php ubicado en  [proyecto]/bd/conectar.php
-cambia $user y  $password segun tu configuración:
-$host = 'localhost'; 
-$port = '5432'; 
-$dbname = 'postgres';
-$user = 'postgres'; 
-$password = 'admin';
+- Abre el archivo conectar.php ubicado en  [proyecto]/bd/conectar.php cambia $user y $password segun tu configuración:
+    ```ini
+        $host = 'localhost'; 
+        $port = '5432'; 
+        $dbname = 'postgres';
+        $user = 'postgres'; 
+        $password = 'admin';
+    ```
 5. **Ver el Proyecto en el Navegador**
 - Abrir el Navegador Web:
 - Ingresa la siguiente URL en la barra de direcciones: http://localhost/tarea1
